@@ -1,9 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:  Segoe UI ,Helvetica Neue, Helvetica, Lucida, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+  background-color: #0a1014;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 a {
@@ -13,4 +22,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.scroll {
+  display:block;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 6px;
+  height: 6px;
+}
+
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #374045;
+  border-radius: 5px;
+  
+}
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 5px;  
 }
